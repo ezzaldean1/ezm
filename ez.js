@@ -17,7 +17,7 @@ client.on('ready', () => {
 	
 });
 	
-            var prefix = "e" ;
+            var prefix = "E" ;
 	
 	
 	/*
@@ -31,7 +31,7 @@ npm install queue
 */
 client.on('message', msg => {
 
-    if (msg.content == 'eplay') {
+    if (msg.content == 'Eplay') {
         if (msg.member.voiceChannel) {
 
      if (msg.member.voiceChannel.joinable) {
