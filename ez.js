@@ -13,11 +13,11 @@ client.on('ready', () => {
   console.log(' Music Bot Is Online')
   console.log('---------------')
   client.user.setStatus("Online")
-    client.user.setActivity(" Type ehelp",{type: 'WATCHING'})
+    client.user.setActivity(" Type ezhelp",{type: 'WATCHING'})
 	
 });
 	
-            var prefix = "E" ;
+            var prefix = "ez" ;
 	
 	
 	/*
@@ -31,7 +31,7 @@ npm install queue
 */
 client.on('message', msg => {
 
-    if (msg.content == 'Eplay') {
+    if (msg.content == 'ezplay') {
         if (msg.member.voiceChannel) {
 
      if (msg.member.voiceChannel.joinable) {
