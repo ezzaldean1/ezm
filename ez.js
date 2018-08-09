@@ -10,13 +10,11 @@ const queue = new Map();
 
 client.on('ready', () => {
   console.log('---------------');
-  console.log(' Music Bot Is Online')
+  console.log(' Bot Is Online')
   console.log('---------------')
-  client.user.setStatus("Online")
-    client.user.setActivity(" Type ezhelp",{type: 'WATCHING'})
-	
-});
-	
+    client.user.setGame(`Good FRIENDS are hard to find, harder to leave, and impossible to forget `, "http://twitch.tv/Streammingg")
+
+});	
             var prefix = "ez" ;
 	
 	
