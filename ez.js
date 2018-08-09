@@ -12,7 +12,7 @@ client.on('ready', () => {
   console.log('---------------');
   console.log(' Bot Is Online')
   console.log('---------------')
-    client.user.setGame(`Good FRIENDS are hard to find, harder to leave, and impossible to forget `, "http://twitch.tv/Streammingg")
+    client.user.setGame(`A friend in need is a friend indeed `, "http://twitch.tv/Streammingg")
 
 });	
             var prefix = "ez" ;
