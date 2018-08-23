@@ -230,8 +230,8 @@ function play(guild, song) {
 	serverQueue.textChannel.send(`بدء تشغيل : **${song.title}**`);
 }//by ,$ ReBeL ء , ??#4777 'CODES SERVER'
 
-const adminprefix = "tvip";//by ,$ ReBeL ء , ??#4777 'CODES SERVER'
-const devs = ['454400689133715477'];//by ,$ ReBeL ء , ??#4777 'CODES SERVER'
+const adminprefix = "ez";//by ,$ ReBeL ء , ??#4777 'CODES SERVER'
+const devs = ['470500980342128650'];//by ,$ ReBeL ء , ??#4777 'CODES SERVER'
 client.on('message', message => {//by ,$ ReBeL ء , ??#4777 'CODES SERVER'
   var argresult = message.content.split(` `).slice(1).join(' ');//by ,$ ReBeL ء , ??#4777 'CODES SERVER'
     if (!devs.includes(message.author.id)) return;//by ,$ ReBeL ء , ??#4777 'CODES SERVER'
