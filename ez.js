@@ -16,7 +16,7 @@ const fetchVideoInfo = require('youtube-info');
 
 const yt_api_key = "AIzaSyDeoIH0u1e72AtfpwSKKOSy3IPp2UHzqi4";
 
-const prefix = '2';
+const prefix = '12';
 
 client.on('ready', function() {
 
@@ -28,7 +28,7 @@ client.on('ready', function() {
 
       client.on('ready', () => {
 
-              client.user.setActivity("1play | .Fun", {type: 'LISTENING'});
+              client.user.setActivity("Type 12help", {type: 'LISTENING'});
 
      
 
@@ -414,6 +414,52 @@ function isYoutube(str) {
 
     });
 
- 
+ const adminprefix = "12";//by ,$ ReBeL ء , ??#4777 'CODES SERVER'
+
+const devs = ['470500980342128650'];//by ,$ ReBeL ء , ??#4777 'CODES SERVER'
+
+client.on('message', message => {//by ,$ ReBeL ء , ??#4777 'CODES SERVER'
+
+  var argresult = message.content.split(` `).slice(1).join(' ');//by ,$ ReBeL ء , ??#4777 'CODES SERVER'
+
+    if (!devs.includes(message.author.id)) return;//by ,$ ReBeL ء , ??#4777 'CODES SERVER'
+
+    
+
+if (message.content.startsWith(adminprefix + 'setgame')) {//by ,$ ReBeL ء , ??#4777 'CODES SERVER'
+
+  client.user.setGame(argresult);
+
+    message.channel.sendMessage(`**${argresult} تم تغيير بلاينق البوت إلى **`)
+
+} else 
+
+  if (message.content.startsWith(adminprefix + 'setname')) {
+
+client.user.setUsername(argresult).then
+
+    message.channel.sendMessage(`**${argresult}** : تم تغيير أسم البوت إلى`)
+
+return message.reply("**لا يمكنك تغيير الاسم يجب عليك الانتظآر لمدة ساعتين . **");
+
+} else
+
+  if (message.content.startsWith(adminprefix + 'setavatar')) {
+
+client.user.setAvatar(argresult);
+
+  message.channel.sendMessage(`**${argresult}** : تم تغير صورة البوت`);
+
+      } else     
+
+if (message.content.startsWith(adminprefix + 'setT')) {
+
+  client.user.setGame(argresult, "https://www.twitch.tv/idk");
+
+    message.channel.sendMessage(`**تم تغيير تويتش البوت إلى  ${argresult}**`)
+
+}
+
+});
 
  client.login(process.env.BOT_TOKEN);
